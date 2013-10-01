@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/nis/tejovanthn/svn/hw/trunk/pd/modules/otu2/hdl/rsii_decoder_otu2'
+let g:netrw_dirhist_2='/home/nis/tejovanthn/svn/hw/trunk/pd/fpgas/agg40_4xotu1_f1f4/hdl'
+let g:netrw_dirhist_3='/home/nis/tejovanthn/svn/hw/trunk/pd/modules/otu2/test/tst_bnch'
+let g:netrw_dirhist_4='/home/nis/tejovanthn/svn/hw/trunk/pd/modules/otu1/hdl/rsii_decoder_otu1/rsii_decoder_otu1'
+let g:netrw_dirhist_5='/home/nis/tejovanthn/svn/hw/trunk/pd/fpgas/agg40_f5_oht/hdl'
+let g:netrw_dirhist_6='/home/nis/tejovanthn/svn/hw/trunk/pd/modules/otu2/test/tst_bnch'
+let g:netrw_dirhist_7='/home/nis/tools/hw/thug'
