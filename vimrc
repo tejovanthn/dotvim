@@ -39,12 +39,15 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets how many lines of history VIM has to remember
 set history=700
+
 
 " Enable filetype plugins
 filetype plugin on
