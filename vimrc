@@ -39,8 +39,9 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
+""call pathogen#runtime_append_all_bundles()
+""call pathogen#helptags()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -66,7 +67,7 @@ nmap <leader>w :w!<cr>
 
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
-command W w !sudo tee % > /dev/null
+"command W w !sudo tee % > /dev/null
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -138,14 +139,15 @@ set foldcolumn=1
 " Enable syntax highlighting
 syntax enable 
 
-try
-    if hostname() == "bearOnTricycle"
-        colorscheme morning
-    else
-        colorscheme evening
-    endif
-catch
-endtry
+colorscheme koehler
+"try
+"    if hostname() == "bearOnTricycle"
+"        colorscheme morning
+"    else
+"        colorscheme evening
+"    endif
+"catch
+"endtry
 
 "set background=dark
 set number
@@ -196,6 +198,7 @@ set wrap "Wrap lines
 
 autocmd BufRead *.rpt :set nowrap
 autocmd BufRead *.log :set nowrap
+autocmd BufRead *.old :set nowrap
 
 
 """"""""""""""""""""""""""""""
@@ -269,9 +272,14 @@ set viminfo^=%
 " Always show the status line
 set laststatus=2
 
-" Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+"to fix the font and lot of strange characters and colors
+"set encoding=utf-8
+set t_Co=256
+"set fillchars+=stl:\ ,stlnc:\
 
+" Format the status line
+""set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
