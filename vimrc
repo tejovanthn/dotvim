@@ -431,3 +431,5 @@ endfunction
 
 nnoremap <F5> "=strftime("%c")<CR>P
 
+"for vim-latex
+let g:tex_flavor='latex'
