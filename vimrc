@@ -433,3 +433,12 @@ nnoremap <F5> "=strftime("%c")<CR>P
 
 "for vim-latex
 let g:tex_flavor='latex'
+map <F6> ma?^\s*\<module\><CR>Wyiw'a:echo "module -->" @0<CR>
+
+
+"folding settings
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
+
