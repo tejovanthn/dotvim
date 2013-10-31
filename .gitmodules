@@ -6,7 +6,10 @@
 	url = https://github.com/Lokaltog/powerline.git
 [submodule "bundle/vim-latex"]
 	path = bundle/vim-latex
-	url = git://git.code.sf.net/p/vim-latex/vim-latex
+	url = https://github.com/jcf/vim-latex.git
 [submodule "bundle/vim-signature"]
 	path = bundle/vim-signature
 	url = https://github.com/kshenoy/vim-signature.git
+[submodule "bundle/vim-indent-guides"]
+	path = bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
