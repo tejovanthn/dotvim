@@ -403,12 +403,7 @@ endfunction
 
 
 " Returns true if paste mode is enabled
-function! HasPaste()
-    if &paste
-        return 'PASTE MODE  '
-    en
-    return ''
-endfunction
+set pastetoggle=<F2> 
 
 " Don't close window, when deleting a buffer
 command! Bclose call <SID>BufcloseCloseIt()
