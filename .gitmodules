@@ -31,3 +31,6 @@
 [submodule "bundle/CoVim"]
 	path = bundle/CoVim
 	url = https://github.com/FredKSchott/CoVim.git
+[submodule "bundle/taskpaper.vim"]
+	path = bundle/taskpaper.vim
+	url = https://github.com/davidoc/taskpaper.vim.git
