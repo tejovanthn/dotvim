@@ -1,11 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/tejovanth/Dropbox/codes/c/urjagreen_firmware/coordinator/Applications/WSNDemo/include'
-let g:netrw_dirhist_2='/home/tejovanth/Dropbox/codes/c/urjagreen_firmware/coordinator/Applications/WSNDemo/src'
-let g:netrw_dirhist_3='/home/tejovanth/Dropbox/codes/python/ammasboy/static/js'
-let g:netrw_dirhist_4='/home/tejovanth/Dropbox/codes/python_old/webpage_extract'
-let g:netrw_dirhist_5='/opt/ti/controlSUITE/development_kits/C2000_LaunchPad/f2802x_examples/timed_led_blink'
-let g:netrw_dirhist_6='/home/tejovanth/Dropbox/codes/python/ineedblood/app/mod_auth'
-let g:netrw_dirhist_7='/home/tejovanth/Dropbox/codes/python/ineedblood/app/mod_hosp'
-let g:netrw_dirhist_8='/home/tejovanth/Dropbox/codes/python/ineedblood/app/mod_user/templates'
-let g:netrw_dirhist_9='/home/tejovanth/timelapse'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/tejovanth/Dropbox/codes/python/ineedblood/app/static/js'
+let g:netrw_dirhist_2='/home/tejovanth/Dropbox/codes/python/ineedblood/app/mod_user'
+let g:netrw_dirhist_3='/home/tejovanth/.vim'

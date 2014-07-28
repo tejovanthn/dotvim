@@ -37,3 +37,6 @@
 [submodule "bundle/vim-flake8"]
 	path = bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8.git
+[submodule "bundle/vim-PythonTidy"]
+	path = bundle/vim-PythonTidy
+	url = https://github.com/suprsvn/vim-PythonTidy.git

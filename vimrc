@@ -438,4 +438,11 @@ set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
+augroup CodeFormatters
+    autocmd!
 
+    autocmd  BufReadPost,FileReadPost   *.py    :silent %!PythonTidy.py
+    autocmd  BufReadPost,FileReadPost   *.p[lm] :silent %!perltidy -q
+    autocmd  BufReadPost,FileReadPost   *.xml   :silent %!xmlpp –t –c –n
+    autocmd  BufReadPost,FileReadPost   *.[ch]  :silent %!indent
+augroup END
