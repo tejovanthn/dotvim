@@ -40,3 +40,6 @@
 [submodule "bundle/vim-PythonTidy"]
 	path = bundle/vim-PythonTidy
 	url = https://github.com/suprsvn/vim-PythonTidy.git
+[submodule "bundle/Vim-R-plugin"]
+	path = bundle/Vim-R-plugin
+	url = https://github.com/jcfaria/Vim-R-plugin.git
