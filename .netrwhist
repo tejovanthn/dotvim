@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/tejovanth/Dropbox/codes/python/ineedblood/app/static/js'
 let g:netrw_dirhist_2='/home/tejovanth/Dropbox/codes/python/ineedblood/app/mod_user'
 let g:netrw_dirhist_3='/home/tejovanth/.vim'
+let g:netrw_dirhist_4='/home/tejovanth/Dropbox/codes/python/mangadownloader/mangadownloader'
+let g:netrw_dirhist_5='/home/tejovanth/dotfiles/.emacs.d'
