@@ -43,3 +43,6 @@
 [submodule "bundle/Vim-R-plugin"]
 	path = bundle/Vim-R-plugin
 	url = https://github.com/jcfaria/Vim-R-plugin.git
+[submodule "bundle/vim-dict"]
+	path = bundle/vim-dict
+	url = https://github.com/szw/vim-dict.git
