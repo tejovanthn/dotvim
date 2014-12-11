@@ -173,7 +173,7 @@ set ffs=unix,dos,mac
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
 set nowb
-set noswapfile
+"set noswapfile
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -446,3 +446,11 @@ augroup CodeFormatters
     autocmd  BufReadPost,FileReadPost   *.xml   :silent %!xmlpp –t –c –n
     autocmd  BufReadPost,FileReadPost   *.[ch]  :silent %!indent
 augroup END
+
+let g:dict_hosts = [
+            \["dict.org", ["wn","moby-thesaurus","foldoc"]]
+            \]
+nnoremap <F3> :Dict<CR> 
+inoremap <F3> <ESC>:Dict<CR>
+
+autocmd FocusLost    *.md    :silent wall
