@@ -46,3 +46,6 @@
 [submodule "bundle/vim-dict"]
 	path = bundle/vim-dict
 	url = https://github.com/szw/vim-dict.git
+[submodule "/home/tejovanth/.vim/bundle/vim-geeknote"]
+	path = /home/tejovanth/.vim/bundle/vim-geeknote
+	url = https://github.com/neilagabriel/vim-geeknote
