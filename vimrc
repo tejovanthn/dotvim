@@ -280,7 +280,7 @@ set t_Co=256
 
 " Format the status line
 ""set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
@@ -455,5 +455,12 @@ inoremap <F3> <ESC>:Dict<CR>
 
 autocmd FocusLost    *.md    :silent wall
 
-set tags=tags;/
+
+"Enable CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+
+"jump to where tags are defined
+nnoremap <leader>. :CtrlPTag<cr>
 
