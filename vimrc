@@ -188,6 +188,11 @@ set smarttab
 " 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
+set expandtab
+retab
+set softtabstop=0 
+set smarttab
+
 
 " Linebreak on 500 characters
 set lbr
@@ -310,7 +315,8 @@ endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeFind<CR>R
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vimgrep searching and cope displaying
@@ -465,12 +471,25 @@ let g:ctrlp_working_path_mode = 'ra'
 nnoremap <leader>. :CtrlPTag<cr>
 
 
-"Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"Ale
+let g:ale_sign_error = '!' " Less aggressive than the default '>>'
+let g:ale_sign_warning = '.'
+let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
+let g:airline#extensions#ale#enabled = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" vim-jsx
+let g:jsx_ext_required = 0
+
+iab  Yhref <a href="" target="_blank"><C-Right><Left></a><ESC>d<insert>
+
+
